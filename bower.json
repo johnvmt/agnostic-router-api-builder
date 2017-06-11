@@ -1,0 +1,17 @@
+{
+  "name": "agnostic-router-api-builder",
+  "version": "0.0.1",
+  "description": "API Builder for agnostic-router package",
+  "authors": [
+    "John Murphy-Teixidor <johnvmt@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "src/ApiRouter.js",
+  "keywords": [],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+  }
+}

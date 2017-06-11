@@ -1,0 +1,25 @@
+{
+  "name": "agnostic-router-api-builder",
+  "version": "0.0.1",
+  "description": "API Builder for agnostic-router package",
+  "private": true,
+  "author": {
+    "name": "John Murphy-Teixidor",
+    "email": "johnvmt@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnvmt/agnostic-router-api-builder.git"
+  },
+  "devDependencies": {
+    "browserify": "14.4.x",
+    "minifyify": "7.3.x"
+  },
+  "dependencies": {
+    "agnostic-router": "0.2.x"
+  },
+  "main": "./src/ApiRouter.js",
+  "scripts": {
+    "test": "mocha test"
+  }
+}
