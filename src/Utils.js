@@ -1,4 +1,4 @@
-// Utils module 1.0.11 MINI
+// Utils module 1.0.12 MINI
 var Utils = {};
 
 Utils.objectMerge = function() {
@@ -142,7 +142,14 @@ Utils.parseArgs = function(argsPassed, argsConfig) {
 	}
 
 	function validArg(argConfig, arg) {
-		return typeof argConfig.validate != 'function' || argConfig.validate(arg)
+		if(typeof argConfig.validate == 'function')
+			return argConfig.validate(arg);
+		else if(typeof argConfig.type == 'string')
+			return typeof arg == argConfig.type;
+		else if(Array.isArray(argConfig.types))
+			return argConfig.types.indexOf(typeof arg) >= 0;
+		else
+			return true;
 	}
 
 	function requiredLeftEnough(argsConfig, minIndex) {

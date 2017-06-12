@@ -2,7 +2,7 @@
   "name": "agnostic-router-api-builder",
   "version": "0.0.1",
   "description": "API Builder for agnostic-router package",
-  "private": true,
+  "private": false,
   "author": {
     "name": "John Murphy-Teixidor",
     "email": "johnvmt@gmail.com"
